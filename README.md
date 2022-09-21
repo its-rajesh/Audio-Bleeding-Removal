@@ -1,2 +1,2 @@
 # Audio-Bleeding-Removal
-Neural Network for Removal of bleeding in Carnatic - Saraga dataset for the application of Music Source Separation
+Neural Network for Removal of bleeding in carnatic music (Saraga dataset) for the application of Music Source Separation
