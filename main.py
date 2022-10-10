@@ -32,7 +32,7 @@ Returns: numpy array of STFT
 
 def calc_stft(path):
     stft = []
-    for file in os.listdir(path):
+    for file in sorted(os.listdir(path)):
         try:
             f, sr = lb.load(path + file, sr=8000, mono=True)
             stft.append(np.abs(lb.stft(f[:960000], n_fft=512)))
@@ -51,7 +51,7 @@ Returns: numpy array of STFT
 
 def get_phase(path):
     phase = []
-    for file in os.listdir(path):
+    for file in sorted(os.listdir(path)):
         try:
             f, sr = lb.load(path + file, sr=8000, mono=True)
             phase.append(np.angle(lb.stft(f[:960000], n_fft=512)))
@@ -77,10 +77,24 @@ test_label_phase = get_phase(trpath)  # calculating phase for input data
 
 ##############################################################################################################
 
+tr_label_stft = []
+tst_label_stft = []
+for i in range(len(training_label_stft)):
+	for i in range(10):
+		tr_label_stft.append(training_label_stft[i])
+		
+for i in range(len(test_label_stft)):
+	for i in range(10):
+		tst_label_stft.append(test_label_stft[i])
+
+
+##############################################################################################################
+
+
 x_train = training_stft
-y_train = training_label_stft
+y_train = np.array(tr_label_stft)
 X_TEST = test_stft
-Y_TEST = test_label_stft
+Y_TEST = np.array(tst_label_stft)
 
 print('Data Processing Done..')
 obj = model.RemoveBleed(x_train, y_train, X_TEST, Y_TEST)
