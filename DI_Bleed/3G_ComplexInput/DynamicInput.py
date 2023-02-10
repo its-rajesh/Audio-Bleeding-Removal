@@ -163,39 +163,39 @@ class DynamicInput:
             yp = i[1][int(m/3):int(2*(m/3))]
             yp__ = i[1][int(2*(m/3)):m]
 
-        if skip == 1:
-            if flag:
-                t = np.array([y_[:, 2]]).T
-                mag_reconst = np.concatenate((mag_reconst, t), axis=1, casting="same_kind")
+            if skip == 1:
+                if flag:
+                    t = np.array([y_[:, 2]]).T
+                    mag_reconst = np.concatenate((mag_reconst, t), axis=1, casting="same_kind")
 		        
-                tp = np.array([yp_[:, 2]]).T
-                phase_reconst = np.concatenate((phase_reconst, tp), axis=1, casting="same_kind")
+                    tp = np.array([yp_[:, 2]]).T
+                    phase_reconst = np.concatenate((phase_reconst, tp), axis=1, casting="same_kind")
 		        
-            else:
-                mag_reconst = y_
-                phase_reconst = yp_
+                else:
+                    mag_reconst = y_
+                    phase_reconst = yp_
 		        
-        if skip == 2:
-            if flag:
-                t = np.array([y_[:, 1:2]]).T
-                mag_reconst = np.concatenate((mag_reconst, t), axis=1, casting="same_kind")
+            if skip == 2:
+                if flag:
+                    t = np.array([y_[:, 1:2]]).T
+                    mag_reconst = np.concatenate((mag_reconst, t), axis=1, casting="same_kind")
 		        
-                tp = np.array([yp_[:, 1:2]]).T
-                phase_reconst = np.concatenate((phase_reconst, tp), axis=1, casting="same_kind")
+                    tp = np.array([yp_[:, 1:2]]).T
+                    phase_reconst = np.concatenate((phase_reconst, tp), axis=1, casting="same_kind")
 		        
-            else:
-                mag_reconst = y_
-                phase_reconst = yp_
+                else:
+                    mag_reconst = y_
+                    phase_reconst = yp_
 		        
-        if skip == 3:
-            if flag:
-                mag_reconst = np.concatenate((mag_reconst, y_), axis=1, casting="same_kind")
-                phase_reconst = np.concatenate((phase_reconst, yp_), axis=1, casting="same_kind")
-            else:
-                mag_reconst = y_
-                phase_reconst = yp_
+            if skip == 3:
+                if flag:
+                    mag_reconst = np.concatenate((mag_reconst, y_), axis=1, casting="same_kind")
+                    phase_reconst = np.concatenate((phase_reconst, yp_), axis=1, casting="same_kind")
+                else:
+                    mag_reconst = y_
+                    phase_reconst = yp_
 		        
-        flag = True
+            flag = True
 		
         if skip == 1:
             mag_reconst = np.concatenate((mag_reconst, y, y__), axis=1, casting="same_kind")
