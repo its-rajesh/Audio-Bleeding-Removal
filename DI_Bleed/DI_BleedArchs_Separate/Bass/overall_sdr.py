@@ -88,7 +88,7 @@ bpath = "/home/anchal/Desktop/rajesh/Datasets/musdb18hq_bleeded/test/"
 tpath = "/home/anchal/Desktop/rajesh/Datasets/musdb18hq/test/"
 
 print("Loading Model")
-di3_dca = keras.models.load_model("/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/model.h5")
+di3_dca = keras.models.load_model("/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/Bass/bass_model.h5")
 
 
 bfiles = sorted(os.listdir(bpath))
@@ -100,12 +100,17 @@ print('CALCULATING SDR & WRITTING RESULTS...')
 
 avg_sdr, avg_isr, avg_sir, avg_sar = [], [], [], []
 n = len(os.listdir(bpath))
+name = []
 for i in tqdm(range(n)):
-    sdr, isr, sir, sar = iter1(di3_dca, bpath+bfiles[i], tpath+tfiles[i], out_path+bfiles[i])
-    avg_sdr.append(sdr)
-    avg_isr.append(isr)
-    avg_sir.append(sir)
-    avg_sar.append(sar)
+    try:
+        sdr, isr, sir, sar = iter1(di3_dca, bpath+bfiles[i], tpath+tfiles[i], out_path+bfiles[i])
+        avg_sdr.append(sdr)
+        avg_isr.append(isr)
+        avg_sir.append(sir)
+        avg_sar.append(sar)
+        name.append(bfiles[i])
+    except:
+        print("file Skipped")
 
 
 print('----------------------------------------')
@@ -118,7 +123,7 @@ print('----------------------------------------')
 
 print('WRITTING CSV FILE...')
 
-res = pd.DataFrame({'files':bfiles, 'sdr':avg_sdr, 'isr':avg_isr, 'sir':avg_sir, 'sar':avg_sar})
+res = pd.DataFrame({'files':name, 'sdr':avg_sdr, 'isr':avg_isr, 'sir':avg_sir, 'sar':avg_sar})
 res.to_csv(out_path+'sdr.csv')
 
 print('END')

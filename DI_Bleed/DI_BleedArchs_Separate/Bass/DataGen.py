@@ -12,8 +12,8 @@ from tqdm import tqdm
 
 import DynamicInput as dp
 
-path = "/home/anchal/Desktop/rajesh/Datasets/musdb18hq_bleeded/train/"
-org_path = "/home/anchal/Desktop/rajesh/Datasets/musdb18hq/train/"
+path = "/home/anchal/Desktop/rajesh/Datasets/musdb18hq_bleeded/test/"
+org_path = "/home/anchal/Desktop/rajesh/Datasets/musdb18hq/test/"
 
 
 flag = False
@@ -40,7 +40,7 @@ for i in tqdm(sorted(os.listdir(path))): #INPUT NO OF FILES AT ONCE
 
 
 print("Writting numpy files...")
-np.save('/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/bass_xtest.npy', xtrain)
-np.save('/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/bass_ytest.npy', ytrain)
+np.save('/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/Bass/xtest_bass.npy', xtrain)
+np.save('/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/Bass/ytest_bass.npy', ytrain)
 
 print(xtrain.shape, ytrain.shape)

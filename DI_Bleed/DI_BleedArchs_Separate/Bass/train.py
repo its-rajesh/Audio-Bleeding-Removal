@@ -18,13 +18,13 @@ import os
 
 
 
-path = "/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/"
+path = "/home/anchal/Desktop/rajesh/DI_Bleed_Archs/Separate/Bass/"
 
 print("Loading Dataset")
-xtrain = np.load(path+'bass_xtrain.npy')
-xtest = np.load(path+'bass_xtest.npy')
-ytrain = np.load(path+'bass_ytrain.npy')
-ytest = np.load(path+'bass_ytest.npy')
+xtrain = np.load(path+'xtrain_bass.npy')
+xtest = np.load(path+'xtest_bass.npy')
+ytrain = np.load(path+'ytrain_bass.npy')
+ytest = np.load(path+'ytest_bass.npy')
 print("Dataset loaded successfully")
 
 print("Magnitude Value..")
@@ -105,12 +105,5 @@ print('FINAL MODEL SAVED SUCCESSFULLY IN ({})'.format(savemodelpath))
 print("Evaluation...")
 loss = di3_dca.evaluate(xtest,  ytest, verbose=1)
 print("Test Loss: {}".format(loss))
-
-##############################################################################################################
-
-print("Prediction...")
-predictions = di3_dca.predict(xtest, verbose=1)
-np.save('./predictions.npy', predictions)
-print('Predictions Saved')
 
 ##############################################################################################################
