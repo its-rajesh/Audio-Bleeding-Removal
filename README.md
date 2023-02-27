@@ -7,3 +7,11 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 | Metrics | Vocal | Bass | Drums | Others | Overall |
 |------|-----|-----|-----|-----|-----|
 |SDR| 3.226 | 11.745 | 8.57 | 7.319 | __7.715__ |
+
+
+## Least Square Solution of Bleed Removal (Time Domain)
+The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
+### Results
+| Metrics | SDR |
+|------|-----|
+|Overall| __10.02__ |
