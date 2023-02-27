@@ -14,4 +14,4 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 ### Results
 | Metrics | SDR |
 |------|-----|
-|Overall| __10.02__ |
+|Overall| ____ |
