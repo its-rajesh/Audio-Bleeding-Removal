@@ -18,4 +18,4 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 
 ## License
 
-This project is licensed under the GNU General Public License - see the [LICENSE]() file for details.
+This project is licensed under the GNU General Public License - see the [LICENSE](https://github.com/its-rajesh/Audio-Bleeding-Removal/blob/3f0f39498972a018aaef6d30f833d10e80a9826e/LICENSE) file for details.
