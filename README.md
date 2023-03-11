@@ -15,3 +15,7 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 | Metrics | SDR |
 |------|-----|
 |Overall| ✨ |
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE]() file for details.
