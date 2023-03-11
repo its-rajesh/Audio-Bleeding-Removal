@@ -18,4 +18,4 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE]() file for details.
+This project is licensed under the GNU General Public License - see the [LICENSE]() file for details.
