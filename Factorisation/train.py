@@ -1,5 +1,6 @@
 import numpy as np
 import librosa as lb
+import soundfile as sf
 from matplotlib import pyplot as plt
 from tqdm import tqdm
 import museval
@@ -62,8 +63,8 @@ def compute_sdr(true, reconstructed, fs):
 
 
 
-bleed_path = '/scratch/rajeshr.scee.iitmandi/Dataset/musdb18hq_bleeded/train/'
-clean_path = '/scratch/rajeshr.scee.iitmandi/Dataset/musdb18hq/train/'
+bleed_path = '/home/anchal/Desktop/rajesh/Datasets/musdb18hq_bleeded/train/'
+clean_path = '/home/anchal/Desktop/rajesh/Datasets/musdb18hq/train/'
 
 
 files = sorted(os.listdir(clean_path))
@@ -74,7 +75,7 @@ bv_sdr, bb_sdr, bd_sdr, bo_sdr = [], [], [], []
 lmda = []
 print('Started')
 
-for i in files[75:]:
+for i in tqdm(files):
 
     print('Processing: ',i)
 
@@ -156,6 +157,6 @@ bsdr_file = pd.DataFrame(
      'overall': bsdr
     })
 
-np.save('/home/rajeshr.scee.iitmandi/Factorization/lambda.npy')
-sdr_file.to_csv('/home/rajeshr.scee.iitmandi/Factorization/sdr.csv')
-bsdr_file.to_csv('/home/rajeshr.scee.iitmandi/Factorization/actual_sdr.csv')
+np.save('/home/anchal/Desktop/rajesh/factorisation/lambda.npy')
+sdr_file.to_csv('/home/anchal/Desktop/rajesh/factorisation/sdr.csv')
+bsdr_file.to_csv('/home/anchal/Desktop/rajesh/factorisation/actual_sdr.csv')
