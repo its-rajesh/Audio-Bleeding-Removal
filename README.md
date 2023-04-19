@@ -16,13 +16,6 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 |------|-----|
 |Overall| ✨ |
 
-## U Net
-The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
-### Results
-| Metrics | Vocal | Bass | Drums | Others | Overall |
-|------|-----|-----|-----|-----|-----|
-|SDR|  |  |  |  |  |
-
 
 ## License
 
