@@ -17,13 +17,14 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 |Overall| __50.2__ |
 
 
-## Model 3: Tailed U-Net Interference Learning Network (Time Domain)
+## Model 3: Truncated U-Net Interference Learning Network (Time Domain)
 The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
 ### Results
 | Metrics | Vocal | Bass | Drums | Others | Overall |
 |------|-----|-----|-----|-----|-----|
 |SDR| 39.25 | 42.90 | 44.22 | 42.11 | __42.12__ |
 
+## Model 4:
 
 ## License
 
