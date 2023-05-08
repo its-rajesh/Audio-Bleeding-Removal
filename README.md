@@ -1,33 +1,25 @@
 # Music Bleeding Removal
-Neural Networks for the removal of bleeding or interference or cross-talk in live recorded music (saraga dataset) for the application of Music Source Separation (MSS). For training these models, the standard MSS dataset: MUSDB18HQ is internally artificially bleeded stimulating the real world bleeding effect.
+Neural Networks for the removal of bleeding, interference, and cross-talk in live recorded music (saraga dataset) for the application of Music Source Separation (MSS). The standard MSS dataset: MUSDB18HQ is artificially bled internally to simulate the real-world bleeding effect during the training of these models.
 
 ## Model 1: Dynamic Frame Input Deep Convolutional Autoencoder (Spectrogram)
-The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
-### Results
 | Metrics | Vocal | Bass | Drums | Others | Overall |
 |------|-----|-----|-----|-----|-----|
 |SDR| 3.226 | 11.745 | 8.57 | 7.319 | __7.715__ |
 
 
 ## Model 2: Bleed Removal Optimized Algorithm (Time Domain - Limited Setup)
-The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
-### Results
 | Metrics | SDR |
 |------|-----|
 |Overall| __50.2__ |
 
 
 ## Model 3: Truncated U-Net Interference Learning Network (Time Domain)
-The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
-### Results
 | Metrics | Vocal | Bass | Drums | Others | Overall |
 |------|-----|-----|-----|-----|-----|
 |SDR| 39.25 | 42.90 | 44.22 | 42.11 | __42.12__ |
 
 
 ## Model 4: Wave U-Net (Time Domain)
-The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
-### Results
 | Metrics | Vocal | Bass | Drums | Others | Overall |
 |------|-----|-----|-----|-----|-----|
 |SDR| 6.50 | 9.84 | 10.85 | 10.32 | __9.38__ |
