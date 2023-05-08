@@ -4,6 +4,9 @@ Neural Networks for the removal of bleeding, interference, and cross-talk in liv
 | Models | Vocal | Bass | Drums | Others | Overall SDR |
 |------|-----|-----|-----|-----|-----|
 |[DI-CAE]()| 3.226 | 11.745 | 8.57 | 7.319 | __7.715__ |
+|[Optimisation]()| 39.25 | 42.90 | 44.22 | 42.11 | __42.12__ |
+|[t-Unet]()| 39.25 | 42.90 | 44.22 | 42.11 | __42.12__ |
+|[S-WaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | __9.38__ |
 
 
 ## Model 1: Dynamic Frame Input Deep Convolutional Autoencoder (Spectrogram)
