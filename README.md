@@ -3,6 +3,7 @@ Neural Networks for the removal of bleeding, interference, and cross-talk in liv
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR |
 |------|-----|-----|-----|-----|-----|
+|[KAMIR]()| 3.226 | 11.745 | 8.57 | 7.319 | __7.715__ |
 |[DI-CAE]()| 3.226 | 11.745 | 8.57 | 7.319 | __7.715__ |
 |[Optimisation]()| 39.25 | 42.90 | 44.22 | 42.11 | __42.12__ |
 |[t-Unet]()| 39.25 | 42.90 | 44.22 | 42.11 | __42.12__ |
