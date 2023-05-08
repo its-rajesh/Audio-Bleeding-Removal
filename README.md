@@ -25,6 +25,12 @@ The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is r
 |SDR| 39.25 | 42.90 | 44.22 | 42.11 | __42.12__ |
 
 
+## Model 4: Wave U-Net (Time Domain)
+The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
+### Results
+| Metrics | Vocal | Bass | Drums | Others | Overall |
+|------|-----|-----|-----|-----|-----|
+|SDR| 6.50 | 9.84 | 10.85 | 10.32 | __9.38__ |
 
 ## License
 
