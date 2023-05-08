@@ -1,5 +1,5 @@
-# Audio-Bleeding-Removal
-Neural Network for Removal of bleeding in carnatic music (Saraga dataset) for the application of Music Source Separation.
+# Music Bleeding Removal
+Neural Networks for the removal of bleeding or interference or cross-talk in live recorded music (saraga dataset) for the application of Music Source Separation (MSS). For training these models, the standard MSS dataset: MUSDB18HQ is internally artificially bleeded stimulating the real world bleeding effect.
 
 ## Model 1: Dynamic Frame Input Deep Convolutional Autoencoder (Spectrogram)
 The architecture is tested with artifically bleeded MUSDB18HQ and the bleed is removed.
