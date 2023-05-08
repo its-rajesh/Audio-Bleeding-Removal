@@ -1,5 +1,5 @@
 # Bleeding Removal in Music Signals
-Neural Networks for the removal of bleeding, interference, and cross-talk in live recorded music (saraga dataset) for the application of Music Source Separation (MSS). The standard MSS dataset: MUSDB18HQ is artificially bled internally to simulate the real-world bleeding effect during the training of these models.
+Neural Networks for the removal of bleeding, interference, and cross-talk in live recorded music dataset for the application of Music Source Separation (MSS). The standard MSS dataset: MUSDB18HQ is artificially bled internally to simulate the real-world bleeding effect during the training of these models.
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR | Live |
 |------|-----|-----|-----|-----|-----|-----|
