@@ -1,14 +1,14 @@
 # Bleeding Removal in Music Signals
 Neural Networks for the removal of bleeding, interference, and cross-talk in live recorded music (saraga dataset) for the application of Music Source Separation (MSS). The standard MSS dataset: MUSDB18HQ is artificially bled internally to simulate the real-world bleeding effect during the training of these models.
 
-| Models | Vocal | Bass | Drums | Others | Overall SDR |
-|------|-----|-----|-----|-----|-----|
-|[Base line]()| 1.78 | 4.44 | 6.78 | 5.96 | 4.74 |
-|[KAMIR]()| 6.41 | 6.75 | 6.83 | 5.61 | 6.40 |
-|[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 4.59 |
-|[Optimisation]()| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
-|[t-Unet (IL)]()| 12.05 | 15.05 | 16.255 | 15.69 | __14.76__ |
-|[S-iWaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 |
+| Models | Vocal | Bass | Drums | Others | Overall SDR | Live recordings |
+|------|-----|-----|-----|-----|-----|-----|
+|[Base line]()| 1.78 | 4.44 | 6.78 | 5.96 | 4.74 | - |
+|[KAMIR]()| 6.41 | 6.75 | 6.83 | 5.61 | 6.40 | G |
+|[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 4.59 | G- |
+|[Optimisation]()| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 | W |
+|[t-Unet (IL)]()| 12.05 | 15.05 | 16.255 | 15.69 | __14.76__ | W |
+|[S-iWaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | |
 
 ## License
 
