@@ -8,7 +8,7 @@ Neural Networks for the removal of bleeding, interference, and cross-talk in liv
 |[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 4.59 | Y |
 |[Optimisation]()| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 | N |
 |[t-Unet (IL)]()| 12.05 | 15.05 | 16.255 | 15.69 | __14.76__ | N |
-|[S-iWaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | Y |
+|[iWaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | Y |
 
 ## License
 
