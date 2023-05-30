@@ -10,7 +10,7 @@ Various proposed model are listed below and compared with KAMIR (Kernel Additive
 |[Optimisation]()| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 | N |
 |[t-Unet (IL)]()| 12.05 | 15.05 | 16.255 | 15.69 | __14.76__ | N |
 |[iWaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | Y |
-||  |  |  |  |  | Y |
+|[diWaveUnet]()|  |  |  |  |  | Y |
 
 
 ## License
