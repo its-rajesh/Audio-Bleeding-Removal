@@ -2,6 +2,7 @@
 Neural Networks for the removal of bleeding or interference or cross-talk in live recorded music dataset for the application of Music Source Separation (MSS). The standard MSS dataset: MUSDB18HQ is artificially bled internally to simulate the real-world bleeding effect during the training of these models. 
 Various proposed model are listed below and compared with KAMIR (Kernel Additive Modelling for Interference Reduction) algorithm.
 
+
 | Models | Vocal | Bass | Drums | Others | Overall SDR | Live |
 |------|-----|-----|-----|-----|-----|-----|
 |[Base line]()| 1.78 | 4.44 | 6.78 | 5.96 | 4.74 | - |
