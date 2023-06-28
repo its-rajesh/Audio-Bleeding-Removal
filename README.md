@@ -4,7 +4,7 @@ Various proposed models are listed below and compared with KAMIR (Kernel Additiv
 
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR | 
-|------|-----|-----|-----|-----|-----|-----|
+|------|-----|-----|-----|-----|-----|
 |[Base line]()| 1.78 | 4.44 | 6.78 | 5.96 | 4.74 | 
 |[KAMIR](https://ieeexplore.ieee.org/abstract/document/7178036)| 6.41 | 6.75 | 6.83 | 5.61 | 6.40 |
 |[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 4.59 | 
