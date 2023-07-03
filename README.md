@@ -5,7 +5,7 @@ Various proposed models with their median Source to Distortion Ratio (SDR) are l
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR | 
 |------|-----|-----|-----|-----|-----|
-|[Reference]()| 7.86 | 4.44 | 6.78 | 5.96 | 5.82 | 
+|[Reference]()| 1.86 | 4.44 | 6.78 | 5.96 | 5.82 | 
 |[KAMIR](https://ieeexplore.ieee.org/abstract/document/7178036)| 13.84 | 6.75 | 6.83 | 5.61 | 7.00 |
 |[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 6.92 | 
 |[Optimisation]()*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
