@@ -11,6 +11,8 @@ Various proposed models are listed below and compared with KAMIR (Kernel Additiv
 |[Optimisation]()*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
 |[t-Unet (IL)]()| 12.05 | 15.05 | 16.255 | 15.69 | __14.76__ |
 |[iWaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
+|[dfUNet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
+
 
 
 *works only for limited setup.
