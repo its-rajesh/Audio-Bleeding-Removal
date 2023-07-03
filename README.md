@@ -9,9 +9,9 @@ Various proposed models with their median Source to Distortion Ratio (SDR) are l
 |[KAMIR](https://ieeexplore.ieee.org/abstract/document/7178036)| 6.41 | 6.75 | 6.83 | 5.61 | 7.00 |
 |[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 6.92 | 
 |[Optimisation]()*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
-|[t-Unet (IL)]()| 12.05 | 15.05 | 16.255 | 15.69 | 8.83 |
-|[iWaveUnet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
-|[dfUNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ | 
+|[t-UNet]()| 12.05 | 15.05 | 16.255 | 15.69 | 8.83 |
+|[f-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
+|[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ | 
 
 
 
