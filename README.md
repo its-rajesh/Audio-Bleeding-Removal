@@ -11,10 +11,8 @@ Various proposed models with their median Source to Distortion Ratio (SDR) are l
 |[Optimisation]()*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
 |[t-UNet]()| 12.05 | 15.05 | 16.255 | 15.69 | 8.83 |
 |[f-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
-|[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ | 
+|[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ |
 
-
-        
-*works only for limited setup (linear mixtures).
+*works only for limited setups (linear mixtures). All models submitted for publication.
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/its-rajesh/Audio-Bleeding-Removal/blob/cde41b94a1be385efc46888a04b30a7b82c33375/LICENSE) file for details.
