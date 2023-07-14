@@ -16,6 +16,12 @@ Various proposed models with their median Source to Distortion Ratio (SDR) are l
 
 *works only for limited setups (linear mixtures). All the proposed models were submitted for publication.
 
+Publications:
+
+[1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023.
+[2] 
+
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/its-rajesh/Audio-Bleeding-Removal/blob/cde41b94a1be385efc46888a04b30a7b82c33375/LICENSE) file for details.
