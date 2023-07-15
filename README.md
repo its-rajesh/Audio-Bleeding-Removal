@@ -1,6 +1,13 @@
 # Bleeding Removal in Music Signals
-Neural Networks for the removal of Bleeding, Leakage, Interference, and Cross-Talk in live recorded music datasets for the application of Music Source Separation (MSS). The standard MSS dataset: MUSDB18HQ is artificially bled internally to simulate the real-world bleeding effect during the training of these models. 
-Various proposed models with their median Source to Distortion Ratio (SDR) are listed below and compared with the baseline KAMIR (Kernel Additive Modelling for Interference Reduction) algorithm.
+
+While recording instrument sounds in live concerts, dedicated microphones are placed to capture their corresponding source. Practically these microphones picks-up the other sources as well as they are not acoustically shielded, leading to bleeding effects. These are also called as leakage, interference or crosstalk. This problem is closely related to source separation but simpler as we have multiple information available. Till now, traditional signal processing based methods were developed and none (as far our knowledge till 2022) neural network based approaches were proposed. This could be because of lack of dataset to train the models.
+
+I have utilised the standard MSS dataset: MUSDB18HQ. The MUSDB18HQ dataset is artificially bleeded in multiple ways to provide bleeding effects. 
+1. Linear mixtures
+2. Adding time delays and room impulse responses and by creating convolute mixtures
+3. Creating artificial room and stimulating the real-world effects
+
+I have proposed various models listed below and compared with the baseline KAMIR (Kernel Additive Modelling for Interference Reduction) algorithm. The median Source to Distortion Ratio (SDR) are shown.
 
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR | 
@@ -14,7 +21,7 @@ Various proposed models with their median Source to Distortion Ratio (SDR) are l
 |[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ |
 
 
-*works only for limited setups (linear mixtures). All the proposed models were submitted for publication.
+*works only for limited setups (linear mixtures). All the proposed models were submitted for publication and separate links & code will be updated soon.
 
 Publications:
 
