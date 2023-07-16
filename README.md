@@ -16,7 +16,7 @@ I have proposed various models listed below and compared with the baseline KAMIR
 |[KAMIR](https://ieeexplore.ieee.org/abstract/document/7178036)| 13.84 | 6.75 | 6.83 | 5.61 | 7.00 |
 |[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 6.92 | 
 |[Optimisation]()*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
-|[t-UNet]()| 12.05 | 15.05 | 16.255 | 15.69 | 8.83 |
+|[t-UNet]()| 8.05 | 9.05 | 8.255 | 6.69 | 8.83 |
 |[f-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
 |[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ |
 
