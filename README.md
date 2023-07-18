@@ -25,7 +25,7 @@ I have proposed various models listed below and compared with the baseline KAMIR
 
 Publications:
 
-[1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (Accepted, link will be provided soon)
+[1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (link will be provided soon)
 
 
 [2] "Bleeding Removal in Music Signals Via Optimization"
