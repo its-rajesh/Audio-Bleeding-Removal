@@ -1,6 +1,6 @@
 # Bleeding Removal in Music Signals
 
-While recording instrument sounds in live concerts, dedicated microphones are placed to capture their corresponding source. Practically these microphones picks-up the other sources as well as they are not acoustically shielded, leading to bleeding effects. These are also called as leakage, interference or crosstalk. This problem is closely related to source separation but simpler as we have multiple information available. Till now, traditional signal processing based methods were developed and none (as far our knowledge till 2022) neural network based approaches were proposed. This could be because of lack of dataset to train the models.
+While recording instrument sounds in live concerts, dedicated microphones are placed to capture their corresponding source. Practically, these microphones pick up the other sources as well, as they are not acoustically shielded, leading to bleeding effects. These are also called leakage, interference, or crosstalk. This problem is closely related to source separation but is simpler as we have multiple sources of information available. Till now, traditional signal processing based methods have been developed, and to our knowledge none of the neural network based approaches were proposed (till 2022). This could be because of lack of dataset to train the models.
 
 I have utilised the standard MSS dataset: MUSDB18HQ. The MUSDB18HQ dataset is artificially bleeded in multiple ways to provide bleeding effects. 
 1. Linear mixtures
