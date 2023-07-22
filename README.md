@@ -1,13 +1,13 @@
 # Bleeding Removal in Music Signals
 
-While recording instrument sounds in live concerts, dedicated microphones are placed to capture their corresponding source. Practically, these microphones pick up the other sources as well, as they are not acoustically shielded, leading to bleeding effects. These are also called leakage, interference, or crosstalk. This problem is closely related to source separation but is simpler as we have multiple sources of information available. Till now, traditional signal processing based methods have been developed, and to our knowledge none of the neural network based approaches were proposed (till 2022). This could be because of lack of dataset to train the models.
+While recording instrument sounds in live concerts, dedicated microphones are placed to capture their corresponding source. Practically, these microphones pick up the other sources as well, as they are not acoustically shielded, leading to bleeding effects. These are also called leakage, interference, or crosstalk. This problem is closely related to source separation but is simpler as we have multiple sources of information available. Till now, traditional signal processing-based methods have been developed, and to our knowledge, none of the neural network-based approaches have been proposed (till 2022). This could be because of a lack of datasets to train the models.
 
-I have utilised the standard MSS dataset: MUSDB18HQ. The MUSDB18HQ dataset is artificially bleeded in multiple ways to provide bleeding effects. 
+I have utilized the standard MSS dataset: MUSDB18HQ. The MUSDB18HQ dataset is artificially bleeded in multiple ways to provide bleeding effects.
 1. Linear mixtures
-2. Adding time delays and room impulse responses and by creating convolute mixtures
+2. Adding time delays and room impulse responses and by creating convoluted mixtures
 3. Creating artificial room and stimulating the real-world effects
 
-I have proposed various models listed below and compared with the baseline KAMIR (Kernel Additive Modelling for Interference Reduction) algorithm. The median Source to Distortion Ratio (SDR) are shown.
+I have proposed various models listed below and compared them with the baseline KAMIR (Kernel Additive Modeling for Interference Reduction) algorithm. The median source-to-distortion ratio (SDR) is shown.
 
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR | 
@@ -21,11 +21,11 @@ I have proposed various models listed below and compared with the baseline KAMIR
 |[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ |
 
 
-*works only for limited setups (linear mixtures). All the proposed models were submitted for publication and separate links & code will be updated soon.
+*works only for limited setups (linear mixtures). All the proposed models were submitted for publication, and separate links & code will be updated soon.
 
 Publications:
 
-[1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (link will be provided soon)
+[1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (link will be provided soon.)
 
 
 [2] "Bleeding Removal in Music Signals Via Optimization"
