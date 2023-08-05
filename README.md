@@ -21,7 +21,7 @@ I have proposed various models listed below and compared them with the baseline 
 |[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ |
 
 
-*works only for limited setups (linear mixtures). All the proposed models were submitted for publication, and separate links & code will be updated soon.
+*works only for limited setups (linear mixtures). All the proposed models were submitted for publication, and separate links & codes will be updated soon.
 
 
 Publications:
