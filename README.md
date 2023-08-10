@@ -7,6 +7,8 @@ I have utilized the standard MSS dataset: MUSDB18HQ. The MUSDB18HQ dataset is ar
 2. Adding time delays and room impulse responses and by creating convoluted mixtures
 3. Creating artificial room and stimulating the real-world effects
 
+### Performance of Proposed Models
+
 I have proposed various models listed below and compared them with the baseline KAMIR (Kernel Additive Modeling for Interference Reduction) algorithm. The median source-to-distortion ratio (SDR) is shown.
 
 
@@ -23,8 +25,9 @@ I have proposed various models listed below and compared them with the baseline 
 
 *works only for limited setups (linear mixtures). All the proposed models were submitted for publication, and separate links & codes will be updated soon.
 
+### Hearing Test
 
-Publications:
+### Publications:
 
 [1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (link will be provided soon.)
 
