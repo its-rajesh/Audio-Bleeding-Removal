@@ -28,7 +28,7 @@ I have proposed various models listed below and compared them with the baseline 
 
 ### Hearing Test
 
-20 peop
+
 
 ### Publications:
 
