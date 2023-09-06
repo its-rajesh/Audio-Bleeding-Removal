@@ -1,11 +1,12 @@
 # Bleeding Removal in Music Signals
 
-While recording instrument sounds in live concerts, dedicated microphones are placed to capture their corresponding source. Practically, these microphones pick up the other sources as well, as they are not acoustically shielded, leading to bleeding effects. These are also called leakage, interference, or crosstalk. This problem is closely related to source separation but is simpler as we have multiple sources of information available. Till now, traditional signal processing-based methods have been developed, and to our knowledge, none of the neural network-based approaches have been proposed (till 2022). This could be because of a lack of datasets to train the models.
+When capturing instrument sounds in live concerts, dedicated microphones are strategically placed to record each source. However, these microphones often pick up unintended sounds from other sources due to the lack of acoustic shielding, resulting in bleeding effects. These effects are also known as leakage, interference, or crosstalk. While this problem is closely related to source separation, it is somewhat simpler because we have multiple sources of information available. Until 2022, traditional signal processing-based methods were the primary approach to address this issue. Surprisingly, no neural network-based solutions were proposed, possibly due to the scarcity of suitable training datasets.
 
-I have utilized the standard MSS dataset: MUSDB18HQ. The MUSDB18HQ dataset is artificially bleeded in multiple ways to provide bleeding effects.
-1. Linear mixtures
-2. Adding time delays and room impulse responses and by creating convoluted mixtures
-3. Creating artificial room and stimulating the real-world effects
+To tackle this challenge, I leveraged the MUSDB18HQ dataset, a standard benchmark dataset for music source separation. This dataset was artificially enhanced to introduce various bleeding effects using the following techniques:
+
+- **Linear Mixtures**: Basic mixing of audio sources.
+- **Time Delays and Room Impulse Responses**: Simulating real-world conditions with convoluted mixtures.
+- **Artificial Room Effects**: Creating artificial room environments to replicate authentic recording conditions.
 
 ### Performance of Proposed Models
 
