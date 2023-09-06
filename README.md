@@ -10,7 +10,7 @@ To tackle this challenge, I leveraged the MUSDB18HQ dataset, a standard benchmar
 
 ### Performance of Proposed Models
 
-I have proposed various models listed below and compared them with the baseline KAMIR (Kernel Additive Modeling for Interference Reduction) algorithm. The median source-to-distortion ratio (SDR) is shown.
+I developed several bleeding removal models and compared their performance against the baseline KAMIR (Kernel Additive Modeling for Interference Reduction) algorithm. The median source-to-distortion ratio (SDR) for each model is presented below:
 
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR | 
@@ -24,7 +24,8 @@ I have proposed various models listed below and compared them with the baseline 
 |[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ |
 
 
-*works only for limited setups (linear mixtures). All the proposed models were submitted for publication, and separate links & codes will be updated soon.
+Note: The 'Optimization*' model works only for limited setups (linear mixtures). All proposed models have been submitted for publication, and separate links and codes will be provided soon.
+
 
 ### Hearing Test
 
