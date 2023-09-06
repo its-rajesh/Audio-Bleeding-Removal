@@ -27,23 +27,15 @@ I developed several bleeding removal models and compared their performance again
 Note: The 'Optimization*' model works only for limited setups (linear mixtures). All proposed models have been submitted for publication, and separate links and codes will be provided soon.
 
 
-### Hearing Test
+### Listening Test
 
-
+To be updated...
 
 ### Publications:
 
-[1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (link will be provided soon.)
-
-
-[2] "Bleeding Removal in Music Signals Via Optimization"
-
-[3] 
-
-
-
-
-
+[1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (A link will be provided soon.) 
+[2] "Bleeding Removal in Music Signals Via Optimization" (Details will be updated)
+[3] (Details will be updated)
 
 
 
