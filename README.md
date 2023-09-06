@@ -34,7 +34,9 @@ To be updated...
 ### Publications:
 
 [1] Rajesh R and Padmanabhan Rajan. "Neural Networks for Interference Reduction in Multi-track Recordings." In 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). IEEE, 2023. (A link will be provided soon.) 
+
 [2] "Bleeding Removal in Music Signals Via Optimization" (Details will be updated)
+
 [3] (Details will be updated)
 
 
