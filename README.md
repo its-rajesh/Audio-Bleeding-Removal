@@ -22,6 +22,7 @@ I developed several bleeding removal models and compared their performance again
 |[t-UNet]()| 8.05 | 9.05 | 8.255 | 6.69 | 8.83 |
 |[f-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
 |[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | __11.54__ |
+|[df-UNet-GAT]()| 16.50 | 19.84 | 20.85 | 20.32 | __21.54__ |
 
 
 Note: The 'Optimization*' model works only for limited setups (linear mixtures). All proposed models have been submitted for publication, and separate links and codes will be provided soon.
