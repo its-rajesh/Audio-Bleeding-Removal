@@ -37,9 +37,9 @@ To be updated...
 
 [1] Rajesh R and Padmanabhan Rajan, "Neural Networks for Interference Reduction in Multi-Track Recordings," 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA), New Paltz, NY, USA, 2023, pp. 1-5, doi: 10.1109/WASPAA58266.2023.10248133. [PAPER](https://ieeexplore.ieee.org/document/10248133) | [CODE](https://github.com/its-rajesh/IRMR)
 
-[2] "Bleeding Removal in Music Signals Via Optimization" (Details will be updated)
+[2] Rajesh R and Padmanabhan Rajan, "Bleeding Removal in Music Signals Via Optimization" (in Review)
 
-[3] (Details will be updated)
+[3] Rajesh R and Padmanabhan Rajan, "GIRNet: Graph-based Interference Reduction Network for Live Recordings," Submitted to Transactions in Audio, Speech and Language Processing (TASLP), 2024. (in Review)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/its-rajesh/Audio-Bleeding-Removal/blob/cde41b94a1be385efc46888a04b30a7b82c33375/LICENSE) file for details.
