@@ -236,9 +236,17 @@ def train_step(X_bleed, Y_clean, theta):
 
 #### DATASET LOADING
 
-Xtrain = np.load('/home/rrame12/Projects/cGANIR/Xtrain_stft.npy')
-Ytrain = np.save('/home/rrame12/Projects/cGANIR/Ytrain_stft.npy')
-print(Xtrain.shape, Ytrain.shape)
+Xtrain_stft = np.load('/home/rrame12/Projects/cGANIR/Xtrain_stft.npy')
+Ytrain_stft = np.save('/home/rrame12/Projects/cGANIR/Ytrain_stft.npy')
+print(Xtrain_stft.shape, Ytrain_stft.shape)
+
+def compute_mag_and_phase(stft):
+    magnitude = np.abs(stft)
+    phase = np.phase(stft)
+    return magnitude, phase
+
+Xtrain, Xphases = compute_mag_and_phase(Xtrain_stft)
+Ytrain, Yphases = compute_mag_and_phase(Ytrain_stft)
 
 # Preparing Dataset
 Xtrain = tf.convert_to_tensor(Xtrain, dtype=tf.float32)  # Ensure proper tensor format
