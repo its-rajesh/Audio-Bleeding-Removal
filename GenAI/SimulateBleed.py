@@ -56,13 +56,17 @@ def rescale_positions(original_positions, original_dims, new_dims):
         scaled_positions.append((x_new, y_new, z_new))
     return scaled_positions
 
-path = '/Users/rajeshr/Desktop/musdb18hq/train/'
+path = '/home/anchal/Desktop/rajesh/research2/Datasets/musdb18hq/train/'
 files = sorted(os.listdir(path))
 
 bleeded_songs = []
 true_songs = []
 print('Simulating Interference...')
 for file in tqdm(files):
+
+    if file == '.DS_Store':
+        continue
+
     vocal, fs = lb.load(path+file+'/vocals.wav')
     bass, fs = lb.load(path+file+'/bass.wav')
     drums, fs = lb.load(path+file+'/drums.wav')

@@ -58,8 +58,8 @@ def process_h5py_to_fixed_length_chunks(h5py_filename, chunk_length=22050, flag=
 
 
 print('Preprocessing data...')
-Ytrain = process_h5py_to_fixed_length_chunks("/home/rrame12/Projects/cGANIR/Ytrain.h5", flag=False)
-Xtrain = process_h5py_to_fixed_length_chunks("/home/rrame12/Projects/cGANIR/Xtrain.h5", flag = True)
+Ytrain = process_h5py_to_fixed_length_chunks("/home/anchal/Desktop/rajesh/research2/cGANIR/Ytrain.h5", flag=False)
+Xtrain = process_h5py_to_fixed_length_chunks("/home/anchal/Desktop/rajesh/research2/cGANIR/Xtrain.h5", flag = True)
 print('Shapes:', Xtrain.shape, Ytrain.shape)
 
 

@@ -1,5 +1,5 @@
 import tensorflow as tf
-from keras import layers, Model
+from tensorflow.keras import layers, Model
 import numpy as np
 import h5py
 import librosa as lb
@@ -236,30 +236,33 @@ def train_step(X_bleed, Y_clean, theta):
 
 #### DATASET LOADING
 
-Xtrain_stft = np.load('/home/rrame12/Projects/cGANIR/Xtrain_stft.npy')
-Ytrain_stft = np.save('/home/rrame12/Projects/cGANIR/Ytrain_stft.npy')
+Xtrain_stft = np.load('/home/anchal/Desktop/rajesh/research2/cGANIR/Xtrain_stft.npy')
+Ytrain_stft = np.load('/home/anchal/Desktop/rajesh/research2/cGANIR/Ytrain_stft.npy')
 print(Xtrain_stft.shape, Ytrain_stft.shape)
 
 def compute_mag_and_phase(stft):
     magnitude = np.abs(stft)
-    phase = np.phase(stft)
+    phase = np.angle(stft)
     return magnitude, phase
 
 Xtrain, Xphases = compute_mag_and_phase(Xtrain_stft)
 Ytrain, Yphases = compute_mag_and_phase(Ytrain_stft)
+print('Magnitude and phase:', Xtrain.shape, Xphases.shape)
 
 # Preparing Dataset
 Xtrain = tf.convert_to_tensor(Xtrain, dtype=tf.float32)  # Ensure proper tensor format
 Ytrain = tf.convert_to_tensor(Ytrain, dtype=tf.float32)
+print('Conversion to tensors done')
 
-train_dataset = tf.data.Dataset.from_tensor_slices((Xtrain, Ytrain)).batch(2)  # Batch size of 2 for small dataset
-
-print('Initiate Training..')
 # Training Loop
-EPOCHS = 100
-theta = [0.5, 0.3, 0.1, 0.1]  # Example weights for different loss terms
+EPOCHS = 5
+theta = [0.25, 0.25, 0.25, 0.25]  # Example weights for different loss terms
 batch_size = 4
 
+print('Preparing batches')
+train_dataset = tf.data.Dataset.from_tensor_slices((Xtrain, Ytrain)).batch(batch_size)  # Batch size of 2 for small dataset
+
+print('Initiate Training..')
 for epoch in range(EPOCHS):
     for step, (X_bleed, Y_clean) in enumerate(train_dataset):
         # Corresponding phases
@@ -293,8 +296,8 @@ for epoch in range(EPOCHS):
     
  
 # Define paths for saving the models
-generator_save_path = "/home/rrame12/Projects/cGANIR/generator"
-discriminator_save_path = "/home/rrame12/Projects/cGANIR/discriminator"
+generator_save_path = "/home/anchal/Desktop/rajesh/research2/cGANIR/generator"
+discriminator_save_path = "/home/anchal/Desktop/rajesh/research2/cGANIR/discriminator"
 
 # Save the generator
 generator.save(generator_save_path)
