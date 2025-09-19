@@ -39,7 +39,7 @@ To be updated...
 
 [2] Rajesh R and Padmanabhan Rajan, "Bleeding Removal in Music Signals Via Optimization" (in Review)
 
-[3] Rajesh R and Padmanabhan Rajan, "GIRNet: Graph-based Interference Reduction Network for Live Recordings," Submitted to Transactions in Audio, Speech and Language Processing (TASLP), 2024. (in Review)
+[3] Rajesh R and Padmanabhan Rajan, "GIRNet: Graph-based Interference Reduction Network for Live Recordings," (in Review)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/its-rajesh/Audio-Bleeding-Removal/blob/cde41b94a1be385efc46888a04b30a7b82c33375/LICENSE) file for details.
